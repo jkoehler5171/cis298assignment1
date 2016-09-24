@@ -1,6 +1,10 @@
 <resources>
-    <string name="app_name">CIS298Assignment1</string>
+    <string name="app_name">Assignment 1: People Counter</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="plus_button">+</string>
+    <string name="minus_button">-</string>
+    <string name="counter_threshold_toast">Reached over 20 People!</string>
 </resources>
+
