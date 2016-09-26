@@ -2,7 +2,7 @@
 ## Due 9-26-2016
 
 ## Author
-
+Jordan Koehler
 ## Description
 
 Create a person counter. The UI should have a + button, and a - button as well as a textview to store the value of the current number.
@@ -37,5 +37,6 @@ This application should be very similar to the first application in the book.
 | Total            | 100    |
 
 ## Outside Resources Used
-
+I did have to google how to cast an int into a string in Java as I've never used Java before. Other than that, just used the in class program for reference.
 ## Known Problems, Issues, And/Or Errors in the Program
+Does what it's supposed to, but there is no save functionality at all so if you tip your phone (or Virtual phone, as it may be) it resets the counter.

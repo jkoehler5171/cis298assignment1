@@ -1,3 +1,6 @@
+//Jordan Koehler, CIS298 MW 2:30-4:45
+//September 25th, 2016
+
 package edu.kvcc.cis298.cis298assignment1;
 
 import android.support.v7.app.AppCompatActivity;
@@ -18,19 +21,19 @@ public class CounterActivity extends AppCompatActivity {
     private int counterInt = 0;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {  //This method is called on the app starting up. I don't currently have it set up to save anything properly.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_counter);
 
-        mCounterText= (TextView) findViewById(R.id.counter_text_view);
+        mCounterText= (TextView) findViewById(R.id.counter_text_view); //Sets the text for the counter
 
         mCounterText.setText(Integer.toString(counterInt));
 
-        mPlusButton= (Button) findViewById(R.id.plus_button);
+        mPlusButton= (Button) findViewById(R.id.plus_button); // Sets up the design of the Plus Button
 
         mPlusButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view) { // Sets the plus button functionality. Increments the counter and does a check to see if the counter has gone beyond 20.
                 counterInt++;
 
                 mCounterText.setText(Integer.toString(counterInt));
@@ -43,11 +46,11 @@ public class CounterActivity extends AppCompatActivity {
         });
 
 
-        mMinusButton= (Button) findViewById(R.id.minus_button);
+        mMinusButton= (Button) findViewById(R.id.minus_button); // Sets the design of the minus button
 
         mMinusButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v) { // Sets the minus button functionality. Really just decrements the counter.
                 counterInt--;
 
                 mCounterText.setText(Integer.toString(counterInt));
